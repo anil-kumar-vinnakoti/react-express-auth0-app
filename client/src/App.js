@@ -15,10 +15,10 @@ function App() {
   async function callProtectedAPI() {
     try {
       const token = await getAccessTokenSilently();
-      const res = await axios.get("http://localhost:4000/me", {
+      const user = await axios.get("http://localhost:4000/me", {
         headers: { Authorization: `Bearer ${token}` },
       });
-      console.log(res.data);
+      console.log(user.data);
     } catch (error) {
       console.log(error);
     }

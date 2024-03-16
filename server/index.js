@@ -1,7 +1,3 @@
-// const express = require("express");
-// const cors = require("cors");
-// const { auth } = require("express-oauth2-jwt-bearer");
-// const axios = require("axios");
 import express from "express";
 import cors from "cors";
 import { auth } from "express-oauth2-jwt-bearer";
